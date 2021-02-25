@@ -1,0 +1,8 @@
+{
+    "author" : ["saurichable"],
+    "install_msg" : "Thank you for installing my cog!",
+    "name" : "SauriCogs",
+    "short" : "Change various settings in other SauriCogs.",
+    "description" : "Change various settings in other SauriCogs that are not otherwise accessible.",
+    "tags" : ["sauricogs"]
+}
