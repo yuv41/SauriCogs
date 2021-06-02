@@ -449,7 +449,7 @@ class ReactTickets(commands.Cog):
                 content=f"{user.mention}, a staff member will be with you shortly, please read the instructions below",
                 embed=embed,
             )
-            await self._add_reactions(embed_user_message, ["🔒", "✋"])
+            await self._add_reactions(embed_user_message, ["🔒", "<:newvision:725104342415442000>"])
 
             embed = discord.Embed(
                 title=f"{user.name}#{user.discriminator} ({user.id})",
