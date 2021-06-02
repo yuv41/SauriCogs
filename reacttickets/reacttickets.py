@@ -400,7 +400,7 @@ class ReactTickets(commands.Cog):
         user: discord.Member,
         settings: dict,
     ):
-        name = f"open-{user.id}"
+        name = f"open-{user.name}-{user.id}"
         category = guild.get_channel(settings["open_category"])
 
         cases = await self.config.guild(guild).cases.get_raw()
@@ -516,7 +516,7 @@ class ReactTickets(commands.Cog):
             await message.clear_reactions()
             await channel.edit(
                 category=guild.get_channel(settings["closed_category"]),
-                name=f"closed-{target.id}",
+                name=f"closed-{user.name}-{target.id}",
                 overwrites={
                     guild.default_role: discord.PermissionOverwrite(
                         read_messages=False
