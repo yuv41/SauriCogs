@@ -409,7 +409,7 @@ class ReactTickets(commands.Cog):
         reason = cases[emoji]["title"]
 
         found = any(
-            channel.name in [f"open-{user.id}", f"assigned-{user.id}"]
+            channel.name in [f"open-{user.name}-{user.id}", f"assigned-{user.id}"]
             for channel in category.channels
         )
 
