@@ -232,7 +232,7 @@ class ReactTickets(commands.Cog):
 
         embed = discord.Embed(
             colour=await ctx.embed_colour(),
-            title=f"{ctx.guild.name} support tickets",
+            title=f"{ctx.guild.name} Staff Application",
             description=description,
         )
         msg = await channel.send(embed=embed)
