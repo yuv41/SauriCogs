@@ -227,7 +227,7 @@ class ReactTickets(commands.Cog):
 
         cases = await self.config.guild(ctx.guild).cases.get_raw()
         description = self._get_cases_string(
-            cases, "React below with the reaction based on what you want.\n"
+            cases, "React below with the reaction to open a staff application ticket.\n"
         )
 
         embed = discord.Embed(
