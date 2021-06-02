@@ -441,7 +441,7 @@ class ReactTickets(commands.Cog):
                 title=reason,
                 description="To apply for staff you will need to fill a small form\n Nickname:\nAge:\nSteam Profile:\nModeration History (If Any):\nHow active you are in a week:\nWhy do you wanna be staff on NewVision:\n",
                 timestamp=datetime.datetime.utcnow(),
-                color=ff0000,
+                color= Color.red(),
             )
             embed.set_thumbnail(url=user.avatar_url)
             embed.set_footer(text=f"{user.name}#{user.discriminator} ({user.id})")
