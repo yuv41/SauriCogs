@@ -439,13 +439,14 @@ class ReactTickets(commands.Cog):
 
             embed = discord.Embed(
                 title=reason,
-                description="To close this ticket, react with 🔒 below.",
+                description="Hello {user.name}#{user.discriminator}, \n To apply for staff you will need to fill a small form\n Nickname:\nAge:\nSteam Profile:\n Moderation History (If Any):\nHow long have you been playing on NewVision:\nHow active are you in a week:",
                 timestamp=datetime.datetime.utcnow(),
+                color=FF0000
             )
             embed.set_thumbnail(url=user.avatar_url)
             embed.set_footer(text=f"{user.name}#{user.discriminator} ({user.id})")
             embed_user_message = await user_channel.send(
-                content=f"{user.mention}, a staff member will be with you shortly.",
+                content=f"{user.mention}, Thanks for applying for staff, read the intructions below.",
                 embed=embed,
             )
             await self._add_reactions(embed_user_message, ["🔒", "✋"])
